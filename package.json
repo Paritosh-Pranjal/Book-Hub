@@ -1,4 +1,5 @@
 {
+  "homepage": "https://paritosh.pranjal.github.io/book-hub",
   "name": "fe_scraffolding",
   "version": "1.0.0",
   "description": "",
@@ -12,7 +13,9 @@
     "test": "jest",
     "coverage": "jest  --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +29,7 @@
     "@mui/x-data-grid": "^6.18.2",
     "axios": "^1.6.2",
     "babel-plugin-module-resolver": "^5.0.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0"

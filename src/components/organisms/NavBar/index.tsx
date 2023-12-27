@@ -3,7 +3,6 @@ import React from 'react';
 import logo from '../../../../public/assests/image/logo.png';
 import Typography from 'components/atoms/Typography';
 import { navBarData } from 'utils';
-import { useNavigate } from 'react-router-dom';
 
 const StyledLogo = styled(Stack)({
   width: '50%',
@@ -28,7 +27,6 @@ const MainBox = styled(Stack)({
 });
 
 const NavBar = () => {
-  const navigate = useNavigate();
   return (
     <MainBox direction={'row'}>
       <StyledLogo direction={'row'} spacing={'2rem'}>
